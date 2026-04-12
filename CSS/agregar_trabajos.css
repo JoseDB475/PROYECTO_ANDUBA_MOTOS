@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* 🔥 Fondo moderno */
+body{
+    
+    min-height: 100vh;
+
+    background: linear-gradient(135deg, #0A2647, #205295, #2C74B3);
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    min-height: cal(100vh - 120px);
+    background: linear-gradient(135deg, #0A2647, #205295, #2c74B3);
+}
+
+.form-container form{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 3rem ;
+    border-radius: 2rem;
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.form-container input, .form-container textarea{
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 0.5rem;
+}
+/* 🔥 Contenedor */
+form{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+
+    padding: 3rem;
+    border-radius: 2rem;
+
+    width: 90%;
+    max-width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.2);
+}
+
+/* 🔥 Título */
+h1{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+/* 🔥 Labels */
+label{
+    width: 100%;
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+}
+
+/* 🔥 Inputs */
+input, textarea{
+    width: 100%;
+    padding: 1.2rem;
+
+    border: none;
+    border-radius: 1rem;
+
+    margin-top: 0.5rem;
+
+    outline: none;
+
+    background: rgba(255,255,255,0.9);
+
+    transition: 0.3s;
+}
+
+/* ✨ Efecto al hacer focus */
+input:focus, textarea:focus{
+    transform: scale(1.03);
+    box-shadow: 0 0 1rem rgba(255,255,255,0.5);
+}
+
+/* 🔥 Botón */
+button{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1.2rem;
+
+    border: none;
+    border-radius: 1rem;
+
+    background: #0A2647;
+    color: white;
+
+    font-size: 1.6rem;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* ✨ Hover botón */
+button:hover{
+    background: #144272;
+    transform: translateY(-3px);
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px){
+    form{
+        padding: 2rem;
+    }
+
+    h1{
+        font-size: 2.4rem;
+    }
+}
