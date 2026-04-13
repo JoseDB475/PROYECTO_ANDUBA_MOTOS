@@ -15,16 +15,17 @@ html{
     display: flex;
     align-items: center;
     justify-content:space-between ;
-    padding: 1rem;
-    background-color: #dae4ce;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #0A2647, #205295, #2C74B3);
 
 }
 
-h1{
+.logo{
     text-align: center;
-    font-size: 3rem;
-    color: #352dcf;
+    font-size: 1.5rem;
+    color:white;
     margin-bottom: 2rem;
+   
 }
 
 .nav-list{
@@ -33,7 +34,7 @@ h1{
 }
 
 .nav-list li a{
-    color: black;
+    color:white;
 }
 
 .abrir-menu,.cerrar-menu{
