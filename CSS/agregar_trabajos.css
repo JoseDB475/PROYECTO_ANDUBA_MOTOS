@@ -126,6 +126,10 @@ button:hover{
     transform: translateY(-3px);
 }
 
+textarea{
+    resize: vertical; min-height: 100px;
+    max-height: 180px;
+}
 /* 📱 Responsive */
 @media (max-width: 480px){
     form{
