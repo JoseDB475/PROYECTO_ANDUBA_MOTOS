@@ -1,24 +1,30 @@
-cons form = document.getElementById("formTrabajo");
+let trabajos = JSON.parse(localStorage.getItem("trabajos")) || [];
 
-form.addEventlistener("submit", funcion(e){
+const form = document.getElementById("formTrabajo");
+
+form.addEventListener("submit", function(e){
     e.preventDefault();
+
+    trabajos.push(trabajo);
 
     const trabajo = {
         nombre:
-        document.getElementById("nombre").ariaValueMax,
+        document.getElementById("nombre").value,
         celular:
-        document.getElementById("celular").ariaValueMax,
+        document.getElementById("celular").value,
         placa:
-        document.getElementById("placa").ariaValueMax,
+        document.getElementById("placa").value,
         fecha:
-        document.getElementById("fecha").ariaValueMax,
+        document.getElementById("fecha").value,
         tipo:
-        document.getElementById("tipo").ariaValueMax,
+        document.getElementById("tipo").value,
         total:
-        document.getElementById("total").ariaValueMax,
+        document.getElementById("total").value,
         observaciones:
-        document.getElementById("observaciones").ariaValueMax,
+        document.getElementById("observaciones").value,
     };
+
+
 
     let trabajos = 
     JSON.parse(localStorage.getItem("trabajos"))|| [];
@@ -30,12 +36,14 @@ form.addEventlistener("submit", funcion(e){
     alert("Trabajo guardado correctamente");
 
     form.reset();
+
+    mostrarTrabajos();
 })
 
 
 const contenedor = document.getElementById("listaTrabajos");
 
-let trabajos = JSON.parse(localStorage.getItem("trabajos")) || [];
+
 
 contenedor.innerHTML = "";
 
@@ -64,13 +72,15 @@ console.log("total ganado", total);
 
 
 const btnTrabajos = document.getElementById("btnTrabajos");
+btnTrabajos.addEventListener("click", mostrarTrabajos);
 
 const btnProductividad = document.getElementById("btnProductividad");
+btnProductividad.addEventListener("click",mostrarProductividad);
 
 const contenido = document.getElementById("contenido");
 
 function mostrarTrabajos(){
-    let trabajos = JSON.parse(localStorage.getItem("trabajos")) || [];
+    let trabajos = JSON.parse(localStorage.getItem("trabajos")) || [];j
 
     contenido.innerHTML = "";
 
@@ -80,7 +90,7 @@ function mostrarTrabajos(){
     }
 
 
-    trabajos.forEach(trabajos => {
+    trabajos.forEach(trabajo => {
         contenido.innerHTML += `
         <div>
         <h3>${trabajo.nombre}</h3>
@@ -106,4 +116,3 @@ function mostrarProductividad(){
     <p>$${total}</p>`;
 }
 
-mostrarTrabajos();
