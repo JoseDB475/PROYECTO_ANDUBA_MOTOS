@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./../CSS/general.css">
+    <link rel="stylesheet" href="./../CSS/agregar_trabajos.css">
 
 </head>
 
@@ -43,39 +44,43 @@
 
 
     <main>
-        <form action="">
-        
-            <label for="name">NOMBRE:
-                <input type="text" placeholder="Tu nombre" id="name">
+        <section class="form-container">
+           <form action="" id="formTrabajo">
+               <label for="nombre">NOMBRE:
+                <input type="text" placeholder="nombre" id="nombre">
                </label>
 
-               <label for="email">CONTACTO:
-                <input type="text" placeholder="example@hotmail.com" id="contacto">
+               <label for="celular">CELULAR:
+                <input type="number" placeholder="celular"    name="contacto" id="celular">
                </label>
 
-               <label for="mensaje">PLACA:
-                <input type="text" placeholder="mensaje " id="mensaje">
+               <label for="placa">PLACA:
+                <input type="text" placeholder="placa" id="placa">
                </label>
 
-               <label for="date">FECHA:
-                <input type="text" placeholder="mensaje " id="mensaje">
+               <label for="fecha">FECHA:
+                <input type="text"placeholder="feche" id="fecha">
                </label>
 
-               <label for="mensaje">TIPO DE TRABAJO:
-                <input type="text" placeholder="mensaje " id="mensaje">
+               <label for="tipo">TIPO DE TRABAJO:
+                <input type="text" placeholder="tipo de trabajo"    name="tipo de trabajo" id="tipo">
                </label>
 
-               <label for="mensaje">TOTAL A PAGAR:
-                <input type="text" placeholder="mensaje " id="mensaje">
+               <label for="total">TOTAL A PAGAR:
+                <input type="text" placeholder="total a pagar" id="total">
                </label>
 
-               <label for="mensaje">OBSERVACIONES:
-                <input type="text" placeholder="mensaje " id="mensaje">
-               </label>
-               
-               <button type="submit">ENVIAR</button>
+               <label for="observaciones">OBSERVACIONES:</label>
+               <textarea id="observaciones" name="observaciones" rows="10" cols="50">
+               Escribe aquí ...
+               </textarea>
 
+               <button type="submit">GUARDAR</button>
+
+
+                
     </form>
+        </section>
     </main>
 
 
