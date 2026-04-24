@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ANDUBAMOTOS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./../CSS/general.css">
-    <link rel="stylesheet" href="./../CSS/agregar_trabajos.css">
+    <link rel="stylesheet" href="./../CSS/main_index.css">
+
+    <link href="./images/moto.png" rel="icon">
+    
+    
+    
 
 </head>
 
+
 <body>
- <header class="header">
+    <header class="header">
 
         <div class="logo">
             <h1>ANDUBA MOTOS</h1>
@@ -26,11 +33,11 @@
             <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
 
             <ul class="nav-list">
+
                 <li><a href="index.html">INICIO</a></li>
-                <li><a href="citas.html">CITAS</a></li>
                 <li><a href="repuestos.html">REPUESTOS</a></li>
-                <li><a href="accesorios_motos.html">ACCESORIOS</a></li>
                 <li><a href="agregar_trabajos.html">AGREGAR TRABAJO</a></li>
+
             </ul>
 
         </nav>
@@ -40,39 +47,24 @@
       <script src="./../header.js"></script>
 
       
+
+
+
     <main>
+        <nav class="nav-secundario">
 
-       <section class="form-container">
-           <form action="" id="formTrabajo">
-               
+            <div id="listaTrabajos"></div>
 
-               <label for="fecha">FECHA:
-                <input type="text"placeholder="fecha" id="fecha">
-               </label>
+            <ul class="nav-list2">
 
-               <label for="tipo">TIPO DE TRABAJO:
-                <input type="text" placeholder="tipo de trabajo"    name="tipo de trabajo" id="tipo">
-               </label>
-
-               <label for="total">TOTAL A PAGAR:
-                <input type="text" placeholder="Total a pagar" id="total">
-               </label>
-
-               <label for="observaciones">OBSERVACIONES:</label>
-               <textarea id="observaciones"  placeholder="Escribe aqui" name="observaciones"  rows="10" cols="50" ></textarea>
-
-               <button type="submit">SALIR</button>
-
-
+                <li class="li1"><a href="trabajos_realizados.html">TRABAJOS REALIZADOS</a></li>
                 
-    </form>
-        </section>
-        
+                <li class="li2"><a href="productividad.html">PRODUCTIVIDAD</a></li>
+                
+            </ul>
+        </nav>
     </main>
-
-
     
-
 
 
 
@@ -83,6 +75,6 @@
         </div>
     </footer>
 
-    
 </body>
+
 </html>
